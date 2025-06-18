@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Галерея</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header>
+    <strong>КВЦ «Башня»</strong>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="exhibitions.html">Актуальные выставки</a>
+        <a href="about.html">О музее</a>
+        <a href="gallery.html">Галерея</a>
+        <a class="buy-ticket" href="ticket.html">Купить билет</a>
+    </nav>
+    <div class="sidebar">
+        <a href="index.html#contacts">Контакты</a>
+    </div>
+</header>
+
+<main>
+    <h1>Галерея</h1>
+    <p style="text-align: center; margin-bottom: 2rem;">Фотографии прошедших и текущих выставок</p>
+
+    <div class="gallery-container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><div class="img-wrapper"><img src="./images/gallery/0jxAhDTCfBw.jpg" alt="Выставка 1" /></div></div>
+                <div class="swiper-slide"><div class="img-wrapper"><img src="./images/gallery/dhVFZ-63vjc.jpg" alt="Выставка 2" /></div></div>
+                <div class="swiper-slide"><div class="img-wrapper"><img src="./images/gallery/hAmoNvuZvEA.jpg" alt="Выставка 3" /></div></div>
+                <div class="swiper-slide"><div class="img-wrapper"><img src="./images/gallery/OcaYiuSkfIc.jpg" alt="Выставка 4" /></div></div>
+                <div class="swiper-slide"><div class="img-wrapper"><img src="./images/gallery/rRzpQkKUDJo.jpg" alt="Выставка 5" /></div></div>
+                <div class="swiper-slide"><div class="img-wrapper"><img src="./images/gallery/Y33Dj3K10vo.jpg" alt="Выставка 6" /></div></div>
+            </div>
+
+            <div class="swiper-button-prev" style={width: '44px'}></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</main>
+
+<script>
+	const swiper = new Swiper('.swiper', {
+		loop: true,
+		spaceBetween: 30,
+		centeredSlides: true,
+		grabCursor: true,
+		slidesPerView: 1,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+			},
+			1024: {
+				slidesPerView: 3,
+			},
+		},
+	});
+</script>
+
+</body>
+</html>
