@@ -1,0 +1,52 @@
+header {
+    background: var(--white);
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e2e2e2;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header strong {
+    font-size: 1.5rem;
+}
+
+nav,
+.sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+nav a,
+.sidebar a {
+    text-decoration: none;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav a:hover,
+.sidebar a:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+nav a.buy-ticket,
+.sidebar a.buy-ticket {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+nav a.buy-ticket:hover,
+.sidebar a.buy-ticket:hover {
+    background: var(--accent);
+    color: var(--white);
+}
